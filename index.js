@@ -1,10 +1,10 @@
-import dotenv from "dotenv";
-// import "dotenv/config.js"
+// import dotenv from "dotenv";
+import "dotenv/config.js";
 import app from "./src/app.js";
 import { getDBConnection } from "./src/db/index.js";
 
 //call env config
-dotenv.config();
+// dotenv.config();
 
 getDBConnection();
 

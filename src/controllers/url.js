@@ -5,7 +5,8 @@ export const submitUrlHandler = async (req, res) => {
   const { origUrl } = req.body;
   //generate  a short id for url
   const shortId = shortid.generate();
-  const shortUrl = `http://localhost:3000/url/${shortId}`;
+  const shortUrl = `http://localhost:3000/${shortId}`;
+
   const urlData = { origUrl, shortUrl, shortId };
   // console.log(urlData);
   try {

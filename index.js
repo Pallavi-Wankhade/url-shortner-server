@@ -11,6 +11,6 @@ getDBConnection();
 //Listen the server
 app.listen(process.env.PORT, () => {
   console.log(
-    `Server started at http://${process.env.HOSTNAME}:${process.env.PORT}/url`
+    `Server started at http://${process.env.HOSTNAME}:${process.env.PORT}`
   );
 });

@@ -21,5 +21,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Attach the routes
-app.use(route.URL, shortUrlRouter);
+app.use(route.HOME, shortUrlRouter);
 export default app;
